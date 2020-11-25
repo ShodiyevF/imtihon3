@@ -1,0 +1,51 @@
+.site-header{
+    padding-top: 12px;
+    padding-bottom: 56px;
+}
+
+.site-header__container{
+    display: flex;
+    align-items: center;
+}
+
+.site-header__tel-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 147px;
+    margin-right: 371px;
+}
+
+.site-header__text{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #272727;   
+}
+
+.site-header__link{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #272727;
+}
+
+.site-header__clock-wrapper{
+    width: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.site-header__text-clock{
+    color: #00B007;
+}
+
+.site-header__link--clock{
+    font-size: 14px;
+    line-height: 16px;
+    color: #272727;
+}
