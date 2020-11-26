@@ -391,6 +391,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 114px;
 }
 
 img {
@@ -420,15 +421,30 @@ img {
 .site-header {
   padding-top: 12px;
   padding-bottom: 56px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000;
+  background-color: white;
 }
 
 .site-header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.site-header__1-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .site-header__tel-wrapper {
@@ -438,11 +454,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 147px;
   margin-right: 371px;
+}
+
+.site-header__tel-wrapper:hover {
+  opacity: 0.8;
+}
+
+.site-header__tel-wrapper:active {
+  opacity: 0.6;
 }
 
 .site-header__text {
@@ -459,6 +480,18 @@ img {
   line-height: 16px;
   text-decoration: none;
   color: #272727;
+}
+
+.site-header__img-link {
+  margin-right: auto;
+}
+
+.site-header__img-link:hover {
+  opacity: 0.8;
+}
+
+.site-header__img-link:active {
+  opacity: 0.6;
 }
 
 .site-header__clock-wrapper {
@@ -483,5 +516,156 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: #272727;
+}
+
+.site-header__img-link2 {
+  display: none;
+}
+
+.site-header__text {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .site-header {
+    padding: 0;
+  }
+  .site-header__container {
+    padding: 0;
+  }
+  .site-header__1-wrapper {
+    display: none;
+  }
+}
+
+.site-header__2-wrapper {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  left: 0;
+  bottom: -140%;
+  background-color: #0055B8;
+}
+
+.sitenav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 33px 23px 29px;
+}
+
+.sitenav__list {
+  width: 487px;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sitenav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.sitenav__link:hover {
+  color: #FFD600;
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.sitenav__list-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+  width: 87px;
+}
+
+.sitenav_icons_img:hover {
+  opacity: 0.8;
+}
+
+.sitenav_icons_img:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1024px) {
+  .site-header__2-wrapper {
+    position: static;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 24px 30px 23px 22px;
+  }
+  .sitenav {
+    width: 727px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px;
+  }
+  .site-header__img-link2 {
+    display: block;
+  }
+}
+
+.site-intro {
+  z-index: -1;
+}
+
+.site-intro__btn {
+  height: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFD600;
+}
+
+.site-intro__btn--1 {
+  width: 42px;
+  background-image: url("/img/Arrow 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.site-intro__btn--2 {
+  width: 70px;
+  background-image: url("/img/Arrow 2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /*# sourceMappingURL=main.css.map */

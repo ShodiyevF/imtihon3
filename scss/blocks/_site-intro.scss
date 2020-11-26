@@ -1,0 +1,27 @@
+.site-intro{
+    z-index: -1;
+}
+
+.site-intro__listbtn{   
+}
+
+.site-intro__btn{
+    height: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD600;
+}
+
+.site-intro__btn--1{
+    width: 42px;
+    background-image: url("/img/Arrow\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.site-intro__btn--2{
+    width: 70px;
+    background-image: url("/img/Arrow\ 2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
