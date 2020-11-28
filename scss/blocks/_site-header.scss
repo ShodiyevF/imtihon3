@@ -1,10 +1,10 @@
 .site-header{
     padding-top: 12px;
-    padding-bottom: 56px;
+    padding-bottom: 70px;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000;
+    z-index: 100;
     background-color: white;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .site-header__img-link{
-    margin-right: auto;
+    margin-right: 7px;
 }
 
 .site-header__img-link:hover{

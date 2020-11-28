@@ -1,27 +1,86 @@
 .site-intro{
+    position: relative;
     z-index: -1;
 }
 
-.site-intro__listbtn{   
+.site-intro__listbtn{
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    bottom: 10%;
+    
 }
 
 .site-intro__btn{
+    background-color: #FFD600;
     height: 70px;
     border: none;
     border-radius: 5px;
-    background-color: #FFD600;
 }
 
 .site-intro__btn--1{
     width: 42px;
     background-image: url("/img/Arrow\ 1.png");
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .site-intro__btn--2{
+    margin-left: 10px;
     width: 70px;
     background-image: url("/img/Arrow\ 2.png");
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.site-intro__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-intro__item{
+    position: relative;
+}
+
+.site-intro__picture{
+    display: flex;
+}
+
+.site-intro__bgimg{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-intro__container2{
+    max-width: 1080px;
+    position: absolute;
+    top: 33%;
+    left: 13%;
+}
+
+.site-intro__text{
+    font-size: 18px;
+    line-height: 21px;
+    color: #272727;
+    margin-bottom: 10px;
+}
+
+.site-intro__texts-title{
+    width: 543px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 47px;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 56px;
+    color: #272727;
+}
+
+.site-instro__link{
+    height: 70px;
 }
